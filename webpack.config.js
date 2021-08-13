@@ -78,6 +78,14 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: babelOptions('@babel/preset-react')
+            },
+            {
+                test: /\.(ttf|woff|woff2|eot)$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource'
             }
         ]
     }
