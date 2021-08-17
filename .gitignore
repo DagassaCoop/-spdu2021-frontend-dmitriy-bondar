@@ -1,6 +1,7 @@
-/node_modules/
+node_modules/
 package-lock.json
 # В папке dist хранятся созданные сборщиком файлы -> конечный продукт
 dist/
 # Example.png - макет
 Example.png
+.vscode/
